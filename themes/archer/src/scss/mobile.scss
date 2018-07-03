@@ -2,15 +2,27 @@
 @import "_variables";
 
 // ========== common ========== //
-.profile,
-.toc-wrapper {
-    display: none;
+.container {
+    flex-direction: column-reverse;
+    margin:0 auto;
+    width: 100%;
+    padding: 1rem 0 0 0;
+    align-items: center;
 }
 
-.container {
-    width: 100%;
-    margin: 0rem auto;
-    padding: 1rem 0 0 0;
+.profile{
+    margin: 1rem auto;
+    .profile-avatar{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .profile-social{
+        display: none;
+    }
+}
+
+toc-wrapper {
+    display: none;
 }
 
 .footer {
