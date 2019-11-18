@@ -27,13 +27,13 @@ visual studio code写markdown的优点总结为以下几点：
 
     虽说在线实时预览是markdown编辑器基本都有的功能，但是，作为一款市面上主流的coding editor，能够通过`Ctrl K + V`直接调出实时markdown预览，感觉是不是棒棒哒！毕竟原生支持markdown实时编辑预览的代码编辑器还是非常有限的。
 
-    ![markdown预览](http://p8tf9aeyd.bkt.clouddn.com/markdown.JPG)
+    ![markdown预览](http://ww1.sinaimg.cn/large/a3543933gy1g926g1ms7ij21p40zzn7u.jpg)
 
 2. 多样化的插件带来的功能扩展
 
     我们知道，vscode最大的优点就是开源带来的丰富的第三方插件，通过这些插件，我们可以大大丰富vscode的markdown编辑功能。随便一搜，markdown的插件就数不胜数。
     
-    ![markdown插件](http://p8tf9aeyd.bkt.clouddn.com/markdown插件.JPG)
+    ![markdown插件](http://ww1.sinaimg.cn/large/a3543933gy1g926gs005jj207r0yz40k.jpg)
 
     - Markdown All in One
 

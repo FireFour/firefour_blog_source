@@ -9,7 +9,7 @@ Linux下pthread线程同步主要有两种方法：信号量(semaphore)和条件
 ### 程序步骤
 首先，用户需要在main函数里创建consumer和producer两个线程，之后调用join方法等待两个线程退出。同时要用到两个条件变量`notempty`和`notfull`。在生产者线程中，生产一个资源之前先判断`notfull`，确保资源数没到上限，之后再生产一个资源，即往消息队列中push一个Packet，然后向消费者发送一个`notempty`信号表示已经生产了一个资源，可用资源数不为空。在消费者线程中，消费一个资源之前先判断`notempty`，确保当前消息队列中有资源，之后再消费一个资源，即从消息队列中pop一个Packet，然后向生产者发送一个`notfull`信号表示已经消费了一个资源，资源数没有到上限。生产者和消费者的处理函数正好是两个相反的对称的过程，可以用下图来表示：
 
-![consumer_producer](http://p8tf9aeyd.bkt.clouddn.com/consumer_producer.png)
+![consumer_producer](http://ww1.sinaimg.cn/large/a3543933gy1g926em8aelj20fk0d4wee.jpg)
 
 ### 实现代码
 ```c++
